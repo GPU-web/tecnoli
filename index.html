@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechNova Accesorios</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    background:linear-gradient(90deg,#00c6ff,#0072ff);
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+header h1{
+    font-size:32px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:20px;
+    max-width:700px;
+}
+
+.hero h2{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#ffcc00;
+    color:black;
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+.section-title{
+    text-align:center;
+    margin:60px 0 30px;
+    font-size:40px;
+    color:#00c6ff;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    padding:0 8% 60px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#00c6ff;
+}
+
+.price{
+    font-size:24px;
+    margin:15px 0;
+    color:#ffcc00;
+    font-weight:bold;
+}
+
+.buy-btn{
+    display:inline-block;
+    background:#00c6ff;
+    color:white;
+    padding:12px 25px;
+    border-radius:25px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.buy-btn:hover{
+    background:#0072ff;
+}
+
+.contacto{
+    background:#111827;
+    margin:50px 8%;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.contacto h2{
+    color:#00c6ff;
+    margin-bottom:20px;
+    font-size:38px;
+}
+
+.contacto p{
+    font-size:20px;
+    margin:10px 0;
+}
+
+.whatsapp-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+    background:#1ebe5d;
+}
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+footer p{
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.hero h2{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+nav{
+    margin-top:10px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>⚡ TechNova</h1>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+        <h2>Accesorios Tecnológicos Premium</h2>
+        <p>Los mejores gadgets para mejorar tu estilo y productividad.</p>
+
+        <a href="#productos" class="btn">Comprar Ahora</a>
+    </div>
+
+</section>
+
+<h2 class="section-title" id="productos">Nuestros Productos</h2>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+            <h3>Audífonos Gamer RGB</h3>
+            <p>Sonido envolvente y diseño futurista.</p>
+            <div class="price">$49.99</div>
+
+            <a href="#" class="buy-btn">Comprar</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+            <h3>Smartwatch Pro</h3>
+            <p>Controla tu salud y tus notificaciones.</p>
+            <div class="price">$79.99</div>
+
+            <a href="#" class="buy-btn">Comprar</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1585386959984-a41552231658?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+            <h3>Teclado Mecánico LED</h3>
+            <p>Máximo rendimiento para gamers y oficina.</p>
+            <div class="price">$59.99</div>
+
+            <a href="#" class="buy-btn">Comprar</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="contacto">
+
+    <h2>📞 Contáctanos</h2>
+
+    <p><strong>Celular:</strong> 0997588661</p>
+
+    <p><strong>Dirección:</strong> Los Rosales - Cantón Catamayo</p>
+
+    <a 
+    class="whatsapp-btn" 
+    href="https://wa.me/593997588661" 
+    target="_blank">
+    Hablar por WhatsApp
+    </a>
+
+</section>
+
+<footer>
+    <p>© 2026 TechNova - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
